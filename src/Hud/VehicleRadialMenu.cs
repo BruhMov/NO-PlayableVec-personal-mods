@@ -384,7 +384,7 @@ namespace PlayableVehicles
             if (vehicle.weaponStations == null) return false;
             foreach (WeaponStation station in vehicle.weaponStations)
             {
-                if (FireMissions.KindOf(station) != FireMissionKind.None) return true;
+                if (FireMissions.KindOf(station) != FireMissionKind.General) return true;
             }
             return false;
         }

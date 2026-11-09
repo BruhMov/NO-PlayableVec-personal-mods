@@ -58,7 +58,7 @@ namespace PlayableVehicles
             if (seeker is BallisticMissileGuidance) return FireMissionKind.Ballistic;
             if (seeker is SARHSeeker || seeker is IRSeeker || seeker is ARHSeeker) return FireMissionKind.AirDefense;
             if (seeker != null) return FireMissionKind.Ballistic;
-            return FireMissionKind.None;
+            return FireMissionKind.General;
         }
 
         public static MissileLauncher Launcher(WeaponStation station)
