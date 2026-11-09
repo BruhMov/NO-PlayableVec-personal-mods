@@ -53,6 +53,7 @@ namespace PlayableVehicles
         public static AccessTools.FieldRef<AimSolver, bool> AimSolverArtillery { get; private set; }
         public static AccessTools.FieldRef<AimSolver, float> AimSolverDragCoef { get; private set; }
         public static AccessTools.FieldRef<Turret, float> TurretMaxElevation { get; private set; }
+        public static AccessTools.FieldRef<Turret, float> TurretMinElevation { get; private set; }
         public static AccessTools.FieldRef<HeadMountedDisplay, HUDApp> HmdSpeed { get; private set; }
         public static AccessTools.FieldRef<HeadMountedDisplay, HUDApp> HmdAltitude { get; private set; }
         public static AccessTools.FieldRef<HeadMountedDisplay, HUDApp> HmdBearing { get; private set; }
@@ -280,6 +281,7 @@ namespace PlayableVehicles
             AimSolverArtillery = OptionalField<AimSolver, bool>("artillery");
             AimSolverDragCoef = OptionalField<AimSolver, float>("artilleryDragCoef");
             TurretMaxElevation = OptionalField<Turret, float>("maxElevation");
+            TurretMinElevation = OptionalField<Turret, float>("minElevation");
             HmdSpeed = OptionalField<HeadMountedDisplay, HUDApp>("speed");
             HmdAltitude = OptionalField<HeadMountedDisplay, HUDApp>("altitude");
             HmdBearing = OptionalField<HeadMountedDisplay, HUDApp>("bearing");
